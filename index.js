@@ -1,12 +1,15 @@
 import express from "express";
 import bodyParser from "body-parser";
+import {fileURLToPath} from "url";
+import { dirname } from "path";
 
+const __dirname = dirname(fileURLToPath(import.meta.url));
 const app = express();
 const port = 5000;
 
 app.use(bodyParser.urlencoded({extended:true}));
 
-app.use(express.static("public/"));
+app.use(express.static(__dirname + "public/"));
 
 app.get('/' , (_ ,res) => {
     res.render("index.ejs");
