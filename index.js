@@ -30,11 +30,9 @@
 
 import express from 'express';
 import bodyParser from 'body-parser';
-import { dirname, join } from 'path';
-import { fileURLToPath } from 'url';
 
 // Determine the directory name
-const __dirname = dirname(fileURLToPath(import.meta.url));
+
 const app = express();
 const port = process.env.PORT || 3000;
 
@@ -43,10 +41,10 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 // Set view engine and views directory
 app.set('view engine', 'ejs');
-app.set('views', join(__dirname, 'views'));
+app.set('views', ( 'views'));
 
 // Serve static files
-app.use(express.static(join(__dirname, 'public')));
+app.use(express.static(( 'public')));
 
 // Routes
 app.get('/', (req, res) => {
