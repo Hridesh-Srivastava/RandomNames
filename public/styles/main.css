@@ -1,0 +1,50 @@
+body {
+    background: #454343;
+    font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui,
+      helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
+    color: rgb(105, 255, 130);
+  }
+  
+  main {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 3.5rem;
+  }
+  
+  input {
+    appearance: none;
+    -webkit-appearance: none;
+    border: 0;
+    font-size: 0.9rem;
+    background: #cb5656;
+    padding: 1rem;
+    color: white;
+    cursor: pointer;
+  }
+  
+  footer {
+    /* position: fixed;
+    bottom: 0; */
+   
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width:20%;
+  }
+
+  .btn-click{
+    opacity: .4;
+    background-color: rgb(221, 3, 3);
+  }
+  
